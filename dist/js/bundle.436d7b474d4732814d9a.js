@@ -15,12 +15,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     console.log(navigator);
     // $('.ua').text(navigator.userAgent)
     (0, _jquery2.default)('.uv').text(navigator.vendor);
-    (0, _jquery2.default)('.wo').text(window.opera);
+    (0, _jquery2.default)('.wo').text(ua.indexOf('148'));
 
     function isFacebookApp() {
         var ua = navigator.userAgent || navigator.vendor || window.opera;
         return ua.indexOf("FBAN") > -1 || ua.indexOf("FBAV") > -1;
-        alert(ua.indexOf(148));
     }
 });
 
@@ -10286,4 +10285,4 @@ return jQuery;
 
 /***/ })
 ],[0]);
-//# sourceMappingURL=bundle.f0aadc4085511a38ebbd.js.map
+//# sourceMappingURL=bundle.436d7b474d4732814d9a.js.map
