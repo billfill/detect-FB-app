@@ -4,8 +4,8 @@ $(function(){
     var ua = navigator.userAgent || navigator.vendor || window.opera;
     console.log(navigator)
     $('.ua').text(navigator.userAgent)
-    $('.uv').text(navigator.vendor)
-    $('.wo').text(ua.slice(127,129))
+    $('.uv').text(ua.indexOf('FBAV/'))
+    $('.wo').text(ua.slice(127,130))
 
     function isFacebookApp() {
         var ua = navigator.userAgent || navigator.vendor || window.opera;
