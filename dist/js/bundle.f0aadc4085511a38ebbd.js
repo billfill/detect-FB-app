@@ -20,6 +20,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     function isFacebookApp() {
         var ua = navigator.userAgent || navigator.vendor || window.opera;
         return ua.indexOf("FBAN") > -1 || ua.indexOf("FBAV") > -1;
+        alert(ua.indexOf(148));
     }
 });
 
@@ -10285,4 +10286,4 @@ return jQuery;
 
 /***/ })
 ],[0]);
-//# sourceMappingURL=bundle.9df621ebf7860174d321.js.map
+//# sourceMappingURL=bundle.f0aadc4085511a38ebbd.js.map
