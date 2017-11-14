@@ -12,8 +12,9 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(function () {
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
     console.log(navigator);
-    // $('.ua').text(navigator.userAgent)
+    (0, _jquery2.default)('.ua').text(navigator.userAgent);
     (0, _jquery2.default)('.uv').text(navigator.vendor);
     (0, _jquery2.default)('.wo').text(ua.indexOf('148'));
 
@@ -10285,4 +10286,4 @@ return jQuery;
 
 /***/ })
 ],[0]);
-//# sourceMappingURL=bundle.436d7b474d4732814d9a.js.map
+//# sourceMappingURL=bundle.9802f870e52ac284697a.js.map

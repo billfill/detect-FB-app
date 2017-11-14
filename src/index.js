@@ -1,8 +1,9 @@
 import $ from 'jquery'
 
 $(function(){
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
     console.log(navigator)
-    // $('.ua').text(navigator.userAgent)
+    $('.ua').text(navigator.userAgent)
     $('.uv').text(navigator.vendor)
     $('.wo').text(ua.indexOf('148'))
 
