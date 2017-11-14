@@ -13,9 +13,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(function () {
     console.log(navigator);
-    (0, _jquery2.default)('.ua').text(navigator.userAgent);
+    // $('.ua').text(navigator.userAgent)
     (0, _jquery2.default)('.uv').text(navigator.vendor);
     (0, _jquery2.default)('.wo').text(window.opera);
+
+    function isFacebookApp() {
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+        return ua.indexOf("FBAN") > -1 || ua.indexOf("FBAV") > -1;
+    }
 });
 
 /***/ }),
@@ -10280,4 +10285,4 @@ return jQuery;
 
 /***/ })
 ],[0]);
-//# sourceMappingURL=bundle.47d20a6cf019ac7a4c01.js.map
+//# sourceMappingURL=bundle.9df621ebf7860174d321.js.map
