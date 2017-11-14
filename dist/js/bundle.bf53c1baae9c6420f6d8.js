@@ -16,7 +16,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     console.log(navigator);
     (0, _jquery2.default)('.ua').text(navigator.userAgent);
     (0, _jquery2.default)('.uv').text(navigator.vendor);
-    (0, _jquery2.default)('.wo').text(ua.indexOf('148'));
+    (0, _jquery2.default)('.wo').text(ua.slice(127, 129));
 
     function isFacebookApp() {
         var ua = navigator.userAgent || navigator.vendor || window.opera;
@@ -10286,4 +10286,4 @@ return jQuery;
 
 /***/ })
 ],[0]);
-//# sourceMappingURL=bundle.9802f870e52ac284697a.js.map
+//# sourceMappingURL=bundle.bf53c1baae9c6420f6d8.js.map
