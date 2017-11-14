@@ -5,6 +5,8 @@ webpackJsonp([0],[
 "use strict";
 
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 var _jquery = __webpack_require__(1);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -16,11 +18,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     console.log(navigator);
     (0, _jquery2.default)('.ua').text(navigator.userAgent);
     (0, _jquery2.default)('.uv').text(ua.indexOf('FBAV/'));
-    (0, _jquery2.default)('.wo').text(ua.slice(ua.indexOf('FBAV/') + 5, ua.indexOf('FBAV/') + 8));
+    (0, _jquery2.default)('.wo').text(_typeof(ua.slice(ua.indexOf('FBAV/') + 5, ua.indexOf('FBAV/') + 8)));
 
-    function isFacebookApp() {
+    function isFacebookApp(version) {
         var ua = navigator.userAgent || navigator.vendor || window.opera;
-        return ua.indexOf("FBAN") > -1 || ua.indexOf("FBAV") > -1;
+        // return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        var isFB = ua.indexOf('FBAV/');
+        if (ua.slice(isFB + 5, isFB + 8) < version) {
+            return true;
+        } else {
+            return false;
+        }
     }
 });
 
@@ -10286,4 +10294,4 @@ return jQuery;
 
 /***/ })
 ],[0]);
-//# sourceMappingURL=bundle.a30e5c693fb99b4fb1dc.js.map
+//# sourceMappingURL=bundle.b0d67165041ff3977bd0.js.map
